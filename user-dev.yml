@@ -51,4 +51,5 @@ hystrix:
 mybatis:
   type-aliases-package: com.leyou.user.pojo
 server:
-  max-http-header-size: 20480
+  tomcat:
+    max-http-header-size: 20480
