@@ -1,5 +1,7 @@
 server:
   port: 8085
+  tomcat:
+    max-http-header-size: 20480
 spring:
   application:
     name: user-service
@@ -50,6 +52,5 @@ hystrix:
             timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
 mybatis:
   type-aliases-package: com.leyou.user.pojo
-server:
-  tomcat:
-    max-http-header-size: 20480
+
+
