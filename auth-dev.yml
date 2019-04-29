@@ -7,7 +7,7 @@ spring:
     virtual-host: /leyou
     username: /leyou
     password: leyou
-    host: 192.168.19.121
+    host: 127.0.0.1
 eureka:
   client:
     service-url:
@@ -22,8 +22,8 @@ eureka:
 leyou:
   jwt:
     secret: leyou@Login(Auth}*^31)&heiMa% # 登录校验的密钥
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
-    priKeyPath: G:\\tmp\\rsa\\rsa.pri # 私钥地址
+    pubKeyPath: F:\\IDEA\\leyou\\rsa\\rsa.pub # 公钥地址
+    priKeyPath: F:\\IDEA\\leyou\\rsa\\rsa.pri # 私钥地址
     expire: 30 # 过期时间,单位分钟
     cookieName: LY_TOKEN
     cookieMaxAge: 30
