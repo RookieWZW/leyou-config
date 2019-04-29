@@ -49,4 +49,4 @@ leyou:
     dataCenterId: 2
   jwt:
     cookieName: LY_TOKEN
-    pubKeyPath: F:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: F:\\IDEA\\leyou\\rsa\\rsa.pub # 公钥地址

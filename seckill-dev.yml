@@ -8,11 +8,11 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 192.168.19.121:9300
+      cluster-nodes: 39.105.162.193:9300
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: 123456
+    username: hlmall
+    password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       maximum-pool-size: 20
@@ -21,12 +21,12 @@ spring:
     virtual-host: /leyou
     username: /leyou
     password: leyou
-    host: 192.168.19.121
+    host: 127.0.0.1
     template:
       exchange: leyou.order.exchange
     publisher-confirms: true
   redis:
-    host: 192.168.19.121
+    host: 127.0.0.1
   jackson:
     default-property-inclusion: non_null # 配置json处理时忽略空值
   resources:
@@ -65,4 +65,4 @@ hystrix:
 leyou:
   jwt:
     cookieName: LY_TOKEN
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: F:\\IDEA\\leyou\\rsa\\rsa.pub # 公钥地址

@@ -5,15 +5,15 @@ spring:
     name: item-service
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: 123456
+    username: hlmall
+    password: 1234
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
   redis:
-    host: 192.168.19.121
+    host: 127.0.0.1
   rabbitmq:
-    host: 192.168.19.121
+    host: 127.0.0.1
     username: /leyou
     password: leyou
     virtual-host: /leyou

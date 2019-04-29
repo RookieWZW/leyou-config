@@ -5,13 +5,13 @@ spring:
     name: test-service
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: 123456
+    username: hlmall
+    password: 1234
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
   rabbitmq:
-    host: 192.168.19.121
+    host: 127.0.0.1
   data:
     mongodb:
       host: localhost
@@ -34,7 +34,7 @@ ip:
 leyou:
   jwt:
     cookieName: LY_TOKEN
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: F:\\IDEA\\leyou\\rsa\\rsa.pub # 公钥地址
   filter:
     allowPaths:
        /api/auth
